@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #Pguesses{
+      margin-left: 120px;
+      margin-top: -34px;
+    }
+    #Att{
+      margin-top:60px;
+    }
+    #main{
+      height:400px;
+      width:400px;
+      margin-left: 20px;
+      margin-top: 50px;
+    }
+    #box{
+      height:450px;
+      width:450px;
+      border: solid 2px red;
+      margin-left: 200px;
+      margin-top: 150px;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <script src="main.js"></script>
+
+    <div id="box">
+    <div id="main">
+      <p> A random number has been selected between 1 and 100. See if you can guess it in 10 turns or fewer.</p>
+      <br>
+      <p> Enter a guess:</p>
+      <form>
+        <input type="text" id="ans">
+      </form>
+      <button onclick="test()"> Submit guess</button>
+    <p> Previous guesses:<div id="Pguesses"></div></p>
+    <div id="Attempts"></div>
+    <div id="Status"></div>
+    <div id="Level"></div>
+  </div>
+</div>
+  </body>
+</html>
